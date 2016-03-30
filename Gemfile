@@ -9,7 +9,7 @@ gem 'sinatra-flash'
 gem 'sinatra-redirect-with-flash'
 
 group :development do
- gem 'sqlite3'
+ gem 'pg'
  gem "tux"
 end
 
