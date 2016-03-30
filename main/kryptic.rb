@@ -35,6 +35,14 @@ post "/posts" do
  end
 end
 
+### Helper methods
+
+#In order to dont allow html text 
+helpers do
+  include Rack::Utils
+  alias_method :h, :escape_html
+end
+
 #This might not be needed
 helpers do
   def domain
