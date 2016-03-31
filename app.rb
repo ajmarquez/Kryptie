@@ -7,6 +7,7 @@ require 'sinatra/redirect_with_flash'
 
 enable :sessions
 
+config.assets.initialize_on_precompile = false
 # class Post < ActiveRecord::Base
 # end
 #
