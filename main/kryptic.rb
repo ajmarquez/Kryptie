@@ -1,4 +1,8 @@
-
+require 'sinatra'
+require 'sinatra/activerecord'
+require './environments'
+require 'sinatra/flash'
+require 'sinatra/redirect_with_flash'
 
 class Post < ActiveRecord::Base
   validates :domain, presence: true, length: { minimum: 5 }
