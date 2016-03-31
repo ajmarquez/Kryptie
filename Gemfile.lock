@@ -113,6 +113,7 @@ PLATFORMS
 DEPENDENCIES
   activerecord
   pg
+  rake
   rspec-rails (~> 3.0)
   sinatra
   sinatra-activerecord

@@ -8,6 +8,7 @@ gem "sinatra-activerecord"
 gem 'sinatra-flash'
 gem 'sinatra-redirect-with-flash'
 gem 'pg'
+gem 'rake'
 
 group :development do
  gem "tux"
