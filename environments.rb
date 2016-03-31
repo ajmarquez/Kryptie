@@ -1,11 +1,5 @@
-configure :development do
- #set :database, 'sqlite:///dev.db'
- set :database, 'sqlite3:name.db'
- set :show_exceptions, true
-end
-
-configure :production do
- db = URI.parse(ENV['DATABASE_URL'] || 'postgres:///localhost/mydb')
+configure :production, :development do
+ db = URI.parse(ENV['DATABASE_URL'] || 'postgres://localhost/ninjadev')
 
  ActiveRecord::Base.establish_connection(
    :adapter  => db.scheme == 'postgres' ? 'postgresql' : db.scheme,
